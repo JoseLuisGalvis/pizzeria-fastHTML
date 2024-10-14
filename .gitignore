@@ -1,0 +1,47 @@
+# .gitignore 
+
+# Ignorar el directorio del entorno virtual
+venv/
+
+# Ignorar el directorio de caché de Python
+__pycache__/
+
+# Ignorar archivos de configuración locales
+.env
+
+# Ignorar archivos de configuración de VS Code
+.vscode/
+
+# Ignorar archivos de configuración de PyCharm
+.idea/
+
+# Ignorar archivos de configuración de Jupyter
+.ipynb_checkpoints/
+
+# Ignorar archivos de configuración de Docker
+.dockerignore
+
+# Ignorar archivos de configuración de Docker Compose
+docker-compose.override.yml
+
+# Ignorar archivos de configuración de Node.js
+node_modules/
+
+# Ignorar archivos de configuración de npm
+package-lock.json
+
+# Ignorar archivos de configuración de Yarn
+yarn.lock
+
+# Ignorar archivos de configuración de pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignorar archivos de configuración de tox
+.tox/
+
+# Ignorar archivos de configuración de coverage
+.coverage
+
+# Ignorar archivos de configuración de pytest
+.pytest_cache/

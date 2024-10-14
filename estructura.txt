@@ -1,0 +1,16 @@
+DRFastHTML/
+│
+├── functions/
+│   └── main.py
+│
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   ├── images/
+│   │   └── logo.jpg
+│   └── scripts.js
+│
+├── netlify.toml
+├── requirements.txt
+├── main.py
+└── README.md
