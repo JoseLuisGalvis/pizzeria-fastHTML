@@ -7,8 +7,6 @@ from fasthtml.components import (
     Button, Section, IMG, Div, FORM, INPUT, TEXTAREA, FOOTER, SPAN, Iframe, Ul, Li, Label
 )
 from fastapi.responses import FileResponse
-from fast_html import *
-
 
 # Crear la aplicación y el enrutador
 btlink = Link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css", type="text/css")
@@ -17,7 +15,7 @@ app, rt = fast_app(hdrs=[btlink])
 # Ruta para servir archivos estáticos
 @app.get("/static/{fname:path}")
 def serve_static(fname: str):
-    return FileResponse(f'static/{fname}')
+    return FileResponse(f'/static/{fname}')
 
 @rt('/contact')
 def contact():
@@ -31,14 +29,15 @@ def create_head():
         Link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"),
         Link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'),
         Link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"),
-        Link(rel='stylesheet', href='/static/css/styles.css'),
+        Link(rel='stylesheet', href='/static/css/styles.css'),  # Ruta ajustada
         Script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'),
         Script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js'),
         Script(src='https://unpkg.com/aos@2.3.1/dist/aos.js'),
         Script(src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js'),
         Script(src='/static/scripts.js'),
-        Script(src='https://cdn.emailjs.com/dist/email.min.js', type='text/javascript') 
+        Script(src='https://cdn.emailjs.com/dist/email.min.js', type='text/javascript')
     )
+
 
 def create_navbar():
     return Nav(id='home', cls='navbar navbar-expand-lg navbar-dark bg-dark fixed-top')(
