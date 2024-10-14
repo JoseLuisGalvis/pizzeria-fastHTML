@@ -1,7 +1,8 @@
 [build]
+  command = "pip install -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port $PORT"
   publish = "static"
-  command = "echo 'No hay comandos de construcción necesarios para archivos estáticos.'"
 
 [functions]
   directory = "functions"
+
 
