@@ -1,6 +1,6 @@
 # requirements.txt
 # https://github.com/AnswerDotAI/fasthtml
 
-fastapi==0.114.0
-git+https://github.com/AnswerDotAI/fasthtml.git
-uvicorn==0.30.6
+fastapi
+python-fasthtml
+uvicorn
