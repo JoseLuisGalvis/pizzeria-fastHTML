@@ -2,5 +2,5 @@
 # https://github.com/AnswerDotAI/fasthtml
 
 fastapi==0.114.0
-python-fasthtml==0.5.1
+git+https://github.com/AnswerDotAI/fasthtml.git
 uvicorn==0.30.6
